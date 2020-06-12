@@ -1,0 +1,16 @@
+Implementar geração de parcelas de boleto bancário, tomando cuidado para que a 
+soma das parcelas seja o valor total da nota: 
+Para isso Você deverá criar uma classe NotaFiscal() que implemente a seguinte 
+interface:
+
+interface INotaFiscal {
+	List<Double> geraParcelas(int nrParcelas, double valorTotal);
+}
+
+Ao chamar o método geraParcelas(), passando como parâmetros o valor total e o 
+numero de parcelas a serem geradas, o sistema deverá retornar uma lista de 
+objetos Double representando os valores das parcelas, divididas corretamente 
+e tomando cuidado para que a soma das parcelas seja igual ao valor total. 
+Obs.: As parcelas podem possuir apenas 2 casas decimais.
+Obs2.: As parcelas devem possuir os valores mais próximos possíveis, mas não 
+necessariamente os mesmos valores.
